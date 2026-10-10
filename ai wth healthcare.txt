@@ -1,0 +1,29 @@
+# HealthTwin AI - Backend Environment Configuration
+PORT=5000
+NODE_ENV=development
+FRONTEND_URL=http://localhost:5173
+
+# Supabase Project Configuration
+SUPABASE_URL=https://zeyuqvzqtbqwpumzvjxv.supabase.co
+SUPABASE_SERVICE_ROLE_KEY=
+
+# Connect to Postgres via the shared transaction-mode pooler (IPv4-only)
+DATABASE_URL="postgresql://postgres.zeyuqvzqtbqwpumzvjxv:667221gouthami@aws-0-ap-northeast-2.pooler.supabase.com:6543/postgres?pgbouncer=true"
+
+# Connect to Postgres via the shared session-mode pooler (used for migrations)
+DIRECT_URL="postgresql://postgres.zeyuqvzqtbqwpumzvjxv:667221gouthami@aws-0-ap-northeast-2.pooler.supabase.com:5432/postgres"
+
+# Optional AI Provider Configuration (OpenAI, Groq, Ollama, Anthropic compatible adapter)
+AI_PROVIDER_API_KEY=
+AI_PROVIDER_MODEL=
+AI_PROVIDER_BASE_URL=
+
+# JWT Authentication Secret
+JWT_SECRET=healthtwin_super_secret_jwt_key_2026_dev
+JWT_EXPIRES_IN=7d
+
+# Allowed Frontend Origins (Comma-separated)
+CORS_ORIGIN=http://localhost:5173
+
+# Auto-seed synthetic patient demo dataset on startup (Disabled)
+ENABLE_DEMO_SEED=false

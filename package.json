@@ -1,0 +1,15 @@
+{
+  "name": "healthtwin-ai",
+  "version": "1.0.0",
+  "description": "HealthTwin AI – Personal Digital Twin & Copilot",
+  "private": true,
+  "scripts": {
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "build:frontend": "npm run build --prefix frontend",
+    "build:backend": "npm run build --prefix backend",
+    "seed:backend": "npm run seed --prefix backend",
+    "verify-db": "npm run verify-db --prefix backend",
+    "test": "npm run test --prefix backend"
+  }
+}
